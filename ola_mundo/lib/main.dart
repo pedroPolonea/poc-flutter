@@ -17,12 +17,38 @@ class AppWidget extends StatelessWidget{
       theme: ThemeData(
         primaryColor: Colors.red
       ),
-      home: Container(
-        child: Center(
-          child: Text('Polo'),
-        ),
-      ),
+      home: HomePage(),
     );
   }
-  
+
 }
+
+class HomePage extends StatefulWidget{
+
+  @override
+  State<StatefulWidget> createState() {
+    return HomePageState();    
+  }
+
+}
+
+class HomePageState extends State<HomePage>{
+  int cont = 0;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        child: Center(
+          child: GestureDetector(
+            child:  Text('Polo $cont'),
+            onTap: (){
+              setState(() {
+                cont++;
+              });
+            },
+            )
+        )
+      );
+  }
+
+}
+
