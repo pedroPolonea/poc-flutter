@@ -48,6 +48,8 @@ flutter:
   assets:
     - assets/images/fma.png
     - assets/images/f1.png
+    - assets/images/ab.jpeg
+    - assets/images/ab1.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
