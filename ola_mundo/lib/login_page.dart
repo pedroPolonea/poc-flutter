@@ -45,13 +45,8 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: (){
                   if (email == 'a' && password == '1'){
                     print('correto');
-                    // Navigator.of(context).push(
-                    //     MaterialPageRoute(builder: (context) => HomePage())
-                    //   );
-
-                    Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(builder: (context) => HomePage())
-                      );
+                    Navigator.of(context).pushReplacementNamed('/home');
+                    // Navigator.of(context).pushNamed('/home');
                   } else {
                     print('Erros');
                   }
