@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
                 height: 300,
                 width: 300,
                 child: 
-                  Image.network('https://www.pngkey.com/png/full/314-3143780_transmutation-circle-stickers-by-th3lord-fullmetal-alchemist-brotherhood.png')
+                  Image.asset('assets/images/f1.png')
                 ),
               SizedBox(height: 10),
               TextField(
