@@ -19,6 +19,13 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Container(
+                height: 300,
+                width: 300,
+                child: 
+                  Image.network('https://www.pngkey.com/png/full/314-3143780_transmutation-circle-stickers-by-th3lord-fullmetal-alchemist-brotherhood.png')
+                ),
+              SizedBox(height: 10),
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 onChanged: (text){
@@ -45,8 +52,8 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: (){
                   if (email == 'a' && password == '1'){
                     print('correto');
-                    Navigator.of(context).pushReplacementNamed('/home');
-                    // Navigator.of(context).pushNamed('/home');
+                    //Navigator.of(context).pushReplacementNamed('/home');
+                    Navigator.of(context).pushNamed('/home');
                   } else {
                     print('Erros');
                   }
